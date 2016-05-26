@@ -11,7 +11,7 @@ var match = (ip, net) => {
   return ((ip ^ net[0]) >>> 0) < (1 << (32 - net[1]) >>> 0);
 };
 
-var chnroute = fs.readFileSync('chnroute.txt').toString().split('\n');
+var chnroute = fs.readFileSync(__dirname + '/chnroute.txt').toString().split('\n');
 
 chnroute.forEach((net, i) => {
   net = net.split('/');
