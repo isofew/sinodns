@@ -1,0 +1,17 @@
+{
+  "name": "sinodns",
+  "version": "1.0.0",
+  "description": "node.js version of ChinaDNS",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "native-dns-packet": "^0.1.1"
+  },
+  "bin": {
+    "sinodns": "index.js"
+  }
+}
