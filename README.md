@@ -8,12 +8,15 @@ node.js version of [ChinaDNS](https://github.com/shadowsocks/ChinaDNS)
 npm -g install sinodns
 ```
 
+Set up a tunnel / VPN and route 8.8.8.8 via the virtual interface so that your
+connection with 8.8.8.8 is private and not poisoned.
+
 ### Usage
 
 ```
 sinodns [port] [address]
 ```
-The command above will run a dns relay listening on address:port, 
+The command above will run a dns relay listening on address:port,
 forwarding requests to 180.76.76.76(Baidu DNS) and 8.8.8.8(Google DNS).
 
 By default, the address is 127.0.0.1:53
