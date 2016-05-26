@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "node.js version of ChinaDNS",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +12,20 @@
   },
   "bin": {
     "sinodns": "index.js"
-  }
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isofew/sinodns.git"
+  },
+  "keywords": [
+    "dns",
+    "relay",
+    "chinadns"
+  ],
+  "bugs": {
+    "url": "https://github.com/isofew/sinodns/issues"
+  },
+  "homepage": "https://github.com/isofew/sinodns#readme"
 }
