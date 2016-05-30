@@ -38,7 +38,8 @@ socket.on('message', (req, client) => {
   var start = Date.now();
   var sockeT = dgram.createSocket('udp4');
   sockeT.on('message', (res, server) => {
-    var answer = Packet.parse(res).answer;
+    try {var answer = Packet.parse(res).answer;}
+    catch (e) {return;}
     var send = () => {
       socket.send(res, client.port, client.address);
       sockeT.close();
