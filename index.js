@@ -35,7 +35,6 @@ var googleDNS = '8.8.8.8';
 var socket = dgram.createSocket('udp4');
 
 socket.on('message', (req, client) => {
-  var start = Date.now();
   var sockeT = dgram.createSocket('udp4');
   sockeT.on('message', (res, server) => {
     try {var answer = Packet.parse(res).answer;}

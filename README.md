@@ -4,12 +4,12 @@ node.js version of [ChinaDNS](https://github.com/shadowsocks/ChinaDNS)
 
 ### Installation
 
+First, set up a tunnel / VPN and route 8.8.8.8 via the virtual interface 
+so that your connection with 8.8.8.8 is private and not poisoned. Then,
+
 ```
 npm -g install sinodns
 ```
-
-Set up a tunnel / VPN and route 8.8.8.8 via the virtual interface so that your
-connection with 8.8.8.8 is private and not poisoned.
 
 ### Usage
 
