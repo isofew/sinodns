@@ -44,7 +44,7 @@ socket.on('message', (req, client) => {
       sockeT.close();
     };
     var recordA = false;
-    for(var i = 0; i < answer.length; ++i) {
+    for (var i = 0; i < answer.length; ++i) {
       if (answer[i].type === 1) {
         recordA = true;
         if (inChina(answer[i].address) === true || server.address === googleDNS) {
